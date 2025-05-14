@@ -28,7 +28,7 @@ A modern Flutter package implementing the next generation iOS design language, b
 
 ### Prerequisites
 
-- Flutter SDK (>=1.17.0)
+- Flutter SDK (>=3.0.0)
 - Dart SDK (^3.7.2)
 
 ### Installation
