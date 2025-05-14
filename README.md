@@ -11,29 +11,101 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+# Solarium
+
+A modern Flutter package implementing the next generation iOS design language, bringing Apple's latest design principles to Flutter applications.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- 🎨 Modern iOS-inspired design components
+- 📱 Native-feeling animations and transitions
+- 🎯 High-performance, customizable widgets
+- 🌙 Dark mode support
+- 📐 Responsive layouts
+- ♿ Accessibility support
 
-## Getting started
+## Getting Started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+### Prerequisites
+
+- Flutter SDK (>=1.17.0)
+- Dart SDK (^3.7.2)
+
+### Installation
+
+Add Solarium to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  solarium: ^0.0.0-dev.1
+```
+
+Then run:
+
+```bash
+flutter pub get
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Import the package in your Dart code:
 
 ```dart
-const like = 'sample';
+import 'package:solarium/solarium.dart';
 ```
 
-## Additional information
+### Basic Example
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+import 'package:flutter/material.dart';
+import 'package:solarium/solarium.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: SolariumTheme.light(),
+      darkTheme: SolariumTheme.dark(),
+      home: const HomeScreen(),
+    );
+  }
+}
+```
+
+## Additional Information
+
+### Documentation
+
+For detailed documentation and API reference, visit our [documentation site](https://pub.dev/documentation/solarium/latest/).
+
+<!-- ### Contributing
+
+We welcome contributions! Please see our [contributing guidelines](https://github.com/glemartret/solarium/CONTRIBUTING.md) for details. -->
+
+### Issues and Feedback
+
+Please file issues and feature requests on the [GitHub repository](https://github.com/glemartret/solarium/issues).
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Roadmap
+
+- [ ] Core UI components
+- [ ] Navigation patterns
+- [ ] Form elements
+- [ ] Animation system
+- [ ] Theme customization
+- [ ] Documentation
+- [ ] Example app
+
+## Support
+
+If you find this package helpful, please consider giving it a star on [GitHub](https://github.com/glemartret/solarium)!
